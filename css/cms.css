@@ -1,0 +1,7 @@
+﻿.color2b{	background-color:#F2F2F2;}
+
+A.samelink:link     {FONT: 12px Tahoma ;line-height:20px ; COLOR: #003559 ; TEXT-DECORATION: none}
+A.samelink:visited  {FONT: 12px Tahoma ;line-height:20px ; COLOR: #003559 ; TEXT-DECORATION: none}
+A.samelink:hover    {FONT: 12px Tahoma ;line-height:20px ; COLOR: #ff8040 ; TEXT-DECORATION: none}
+
+.samecontent {font-family: Tahoma ;font-size: 10px;font-weight: bold;color: #cdcdcd;line-height:25px;padding-top: 3px;padding-bottom: 3px;}

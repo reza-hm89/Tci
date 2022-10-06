@@ -1,0 +1,354 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html dir="rtl" xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="publisher" content="Terend.com" />
+    <meta name="generator" content="Terend.com" />
+    <meta name="siteid-pageid" content="1-125" />
+
+	
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" media="screen" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" media="screen" />
+    <link rel="stylesheet" href="css/magnific-popup.css" media="screen" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/rtl-theme.css" />
+    <link rel="stylesheet" href="css/rtl-theme-elements.css" />
+    <link rel="stylesheet" href="css/rtl-theme-blog.css" />
+    <link rel="stylesheet" href="css/theme-animate.css" />
+
+    <!-- Skin CSS -->
+    <link rel="stylesheet" href="css/default.css" />
+
+    <!-- Theme Custom CSS -->
+    <link href="css/animate.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/chartist.min.css" />
+    <link rel="stylesheet" href="css/tct-font.css" />
+    <link rel="stylesheet" href="css/custom.css?v=1" />
+    <link rel="stylesheet" href="css/sip-style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Head Libs -->
+    <!--[if lt IE 9]>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+
+    <!-- dotdotdot js -->
+    <script type="text/javascript" src="js/jquery.dotdotdot.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("p.news-itn-content").dotdotdot({});
+        });
+    </script>
+
+    <script type="text/javascript" src="js/modernizr.js"></script>
+
+    <!--<![endif]-->
+
+    <!--[if IE]>
+    <link rel="stylesheet" href="css/rtl-ie.css">
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+    <script src="js/respond.js"></script>
+    <script src="js/excanvas.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="includes/slider/css/cms.css" />
+
+    <title>مخابرات استان خراسان شمالی</title>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="refo" class="body">
+
+                <asp:ContentPlaceHolder ID="HeaderPlaceHolder" runat="server">
+                    <!--Header Tag-->
+                    <header id="header" class="flat-menu clean-top"
+                        data-plugin-options='{"stickyEnabled": true, "stickyForceHeaderTop": "-69px"}'>
+                        <div class="header-top">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="search">
+                                        <form novalidate="novalidate" id="searchForm"
+                                            action="" method="post">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control search" name="T1" id="q"
+                                                    placeholder="جستجو ..." />
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default" type="button">
+                                                        <i
+                                                            class="icon-search"></i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="jmm">
+                                        <!--جستجوی مراکز مخابراتی-->
+                                        <i class="icon-searchtct"></i><a href="SearchCenter.aspx">جستجوی مراکز مخابراتی</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="logo">
+                                <a href="Default.aspx">
+                                    <img alt="Aryanic" width="220" height="50" data-sticky-width="185" data-sticky-height="42"
+                                        src="images/tct-logo.png">
+                                </a>
+                            </div>
+
+                            <button class="btn btn-responsive-nav btn-inverse cd-btn" data-toggle="collapse"
+                                data-target=".nav-main-collapse">
+                                <img alt="" src="images/res-menu-but.png">
+                            </button>
+                        </div>
+
+                        <div class="cd-panel from-right">
+                            <header class="cd-panel-header">
+                                <h1>منوی اصلی</h1>
+                                <a href="#" class="cd-panel-close">Close</a>
+                            </header>
+                            <div class="cd-panel-container">
+                                <div class="cd-panel-content">
+
+                                    <div class="navbar-collapse nav-main-collapse collapse">
+                                        <div class="container nopadl">
+                                            <nav class="nav-main mega-menu">
+                                                <ul class="nav nav-pills nav-main" id="mainMenu" runat="server">
+
+                                                  
+                                                    <li id="headerAccount" class="dropdown signin">
+                                                        <a href="#" class="dropdown-toggle">
+                                                            <span class="cfbr"></span>
+                                                            <i class="icon-customer"></i>&nbsp;پیام مشتری
+                                           
+                                                            <span class="cfbl"></span>
+                                                        </a>
+                                                        <asp:PlaceHolder runat="server" ID="CustomerMessageMenu"></asp:PlaceHolder>
+                                                    </li>
+
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cd-panel-content -->
+                            </div>
+                            <!-- cd-panel-container -->
+                        </div>
+                        <!-- cd-panel -->
+                    </header>
+                    <script>
+                        if ($(window).width() < 990) {
+                            $("#mainMenu > li > a").attr("href", "#");
+                        }
+                        else {
+
+                        }
+    </script>
+
+                </asp:ContentPlaceHolder>
+
+
+                <div role="main" class="main">
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                    </asp:ContentPlaceHolder>
+
+
+                </div>
+                <asp:ContentPlaceHolder ID="FooterPlaceHolder" runat="server">
+                    <!--Footer Tag-->
+                    <footer id="footer" class="light">
+
+                        <div class="footer-copyright">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <!--copyright text-->
+                                        <p>
+                                            <span>كلیه حقوق مادی و معنوی این سامانه متعلق به مدیریت منطقه مخابرات خراسان شمالی می باشد.</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </asp:ContentPlaceHolder>
+
+
+
+
+
+
+
+            </div>
+
+            <!-- Vendor -->
+
+
+            <script type="text/javascript" src="js/jquery.appear.js"></script>
+            <script type="text/javascript" src="js/jquery.easing.js"></script>
+            <script type="text/javascript" src="js/jquery-cookie.js"></script>
+            <script type="text/javascript" src="js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="js/common.js"></script>
+            <script type="text/javascript" src="js/jquery.isotope.js"></script>
+            <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+            <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+
+            <!-- Theme Base, Components and Settings -->
+            <script type="text/javascript" src="js/theme.js"></script>
+
+            <!-- Theme Custom -->
+            <script type="text/javascript" src="js/custom.js"></script>
+
+            <!-- Theme Initialization Files -->
+            <script type="text/javascript" src="js/theme.init.js"></script>
+
+            <!-- Resize font -->
+            <script type="text/javascript">
+                        $(document).ready(function () {
+                            $('#incfont').click(function () {
+                                curSize = parseInt($('#refo').css('font-size')) + 2;
+                                if (curSize <= 20)
+                                    $('#refo').css('font-size', curSize);
+                            });
+                            $('#decfont').click(function () {
+                                curSize = parseInt($('#refo').css('font-size')) - 2;
+                                if (curSize >= 12)
+                                    $('#refo').css('font-size', curSize);
+                            });
+                        });
+</script>
+
+            <!-- Menu Effect -->
+            <script type="text/javascript" src="js/jquery.bootstrap-dropdown-on-hover.js"></script>
+            <script type="text/javascript">
+                $("#mainMenu").bootstrapDropdownOnHover({
+                    mouseOutDelay: 900, // Number of milliseconds to wait before closing the menu on mouseleave
+                    responsiveThreshold: 992, // Pixel width where the menus should no-longer be activated by hover
+                    hideBackdrop: true // Whether to remove the menu backdrop upon hover (mobile only)
+                });
+</script>
+
+            <script type="text/javascript">
+                $productLinks = $('#headerAccount').mouseover(function () {
+                    $('.cfbr').css("border-right", "#fff solid 1px");
+                    $('.cfbl').css("border-left", "#fff solid 1px");
+                });
+                $productLinks = $('#headerAccount').mouseleave(function () {
+                    $('.cfbr').css("border-right", "#4d81d2 solid 1px");
+                    $('.cfbl').css("border-left", "#4d81d2 solid 1px");
+                });
+</script>
+
+            <script type="text/javascript">
+                String.prototype.toFaDigit = function () {
+                    return this.replace(/\d+/g, function (digit) {
+                        var ret = '';
+                        for (var i = 0, len = digit.length; i < len; i++) {
+                            ret += String.fromCharCode(digit.charCodeAt(i) + 1728);
+                        }
+
+                        return ret;
+                    });
+                };
+
+                function TraceNodes(Node) {
+                    if (Node.nodeType == 3 && Node.parentNode.localName != "style" && Node.parentNode.localName != "script") {
+                        Node.nodeValue = Node.nodeValue.toFaDigit();
+                    } else {
+                        for (var i = 0; i < Node.childNodes.length; i++)
+                            TraceNodes(Node.childNodes[i]);
+                    }
+                }
+                window.onload = function () {
+                    TraceNodes(document);
+                };
+</script>
+
+            <script type="text/javascript">
+                jQuery(document).ready(function ($) {
+                    //open the lateral panel
+                    $('.cd-btn').on('click', function (event) {
+                        event.preventDefault();
+                        $('.cd-panel').addClass('is-visible');
+                    });
+                    //clode the lateral panel
+                    $('.cd-panel').on('click', function (event) {
+                        if ($(event.target).is('.cd-panel') || $(event.target).is('.cd-panel-close')) {
+                            $('.cd-panel').removeClass('is-visible');
+                            $('.nav-main-collapse').removeClass('in');
+                            event.preventDefault();
+                        }
+                    });
+
+                    $('.cd-panel-close').on('click', function (event) {
+                        event.preventDefault();
+                        $('.nav-main-collapse').removeClass('in');
+                    });
+
+                });
+</script>
+
+            <script>function numtolatin(num) {
+                    var a = num;
+                    for (i = 0; i < a.length; i++) {
+                        a = a.replace('۰', '0');
+                        a = a.replace('۱', '1');
+                        a = a.replace('۲', '2');
+                        a = a.replace('۳', '3');
+                        a = a.replace('۴', '4');
+                        a = a.replace('۵', '5');
+                        a = a.replace('۶', '6');
+                        a = a.replace('۷', '7');
+                        a = a.replace('۸', '8');
+                        a = a.replace('۹', '9');
+                    }
+                    return a;
+                }</script>
+
+            <!-- Online Support by www.1abzar.com --->
+     <%--       <script>
+                var offline_text = "پیغام بگذارید";
+                var online_text = "پشتیبانی آنلاین می باشد";
+                var first_text = "کاربر گرامی ، بخش پشتیبانی سایت آماده پاسخگویی به شما می باشد. جهت شروع گفتگو نام خود را وارد کنید :";
+                var rangbg = "BE0808"; var rangtxt = "FFFFFF";
+            </script>
+            <script type="text/javascript" src="http://online.1abzar.com/1abzar-mini.php?admin=3056842&mail=1&poz=left"></script>
+            <div style="display: none">
+                <h3><a href="http://www.1abzar.com">&#1662;&#1588;&#1578;&#1740;&#1576;&#1575;&#1606;&#1740;</a></h3>
+            </div>--%>
+
+        </div>
+    </form>
+</body>
+</html>

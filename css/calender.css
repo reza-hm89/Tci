@@ -1,0 +1,196 @@
+﻿a.cpMonthNavigation:link {text-decoration: none;color: #000000;}
+a.cpMonthNavigation:visited {	text-decoration: none;}
+a.cpMonthNavigation:hover {	text-decoration: none;	color: #999999;}
+a.cpMonthNavigation:active {	text-decoration: none;	color: #006699;}
+a.cpYearNavigation:link {text-decoration: none;color: #000000;}
+a.cpYearNavigation:visited {	text-decoration: none;}
+a.cpYearNavigation:hover {	text-decoration: none;	color: #999999;}
+a.cpYearNavigation:active {	text-decoration: none;	color: #006699;}
+a.cpCurrentMonthDate:link {text-decoration: none;color: #000000;}
+a.cpCurrentMonthDate:visited {	text-decoration: none;}
+a.cpCurrentMonthDate:hover {	text-decoration: none;	color: #000000;}
+a.cpCurrentMonthDate:active {	text-decoration: none;	color: #000000;}
+a.cpCurrentMonthDateH:link {text-decoration: none;}
+a.cpCurrentMonthDateH:visited {	text-decoration: none;}
+a.cpCurrentMonthDateH:hover {	text-decoration: none;	}
+a.cpCurrentMonthDateH:active {	text-decoration: none;	}
+a.cpCurrentDate:link {text-decoration: none;}
+a.cpCurrentDate:visited {	text-decoration: none;}
+a.cpCurrentDate:hover {	text-decoration: none;	}
+a.cpCurrentDate:active {	text-decoration: none;	}
+a.cpCurrentDateH:link {text-decoration: none;}
+a.cpCurrentDateH:visited {	text-decoration: none;}
+a.cpCurrentDateH:hover {	text-decoration: none;	}
+a.cpCurrentDateH:active {	text-decoration: none;	}
+a.cpTodayText:link {text-decoration: none;color: #000000;}
+a.cpTodayText:visited {	text-decoration: none;color: #000000;}
+a.cpTodayText:hover {	text-decoration: none;color: #999999;	}
+a.cpTodayText:active {	text-decoration: none;color: #000000;	}
+
+
+
+.cpBorder {
+	border: 1px white solid ;
+	background-color: #FFFFFF;
+	font-size:8pt;
+
+font-family:Tahoma, Arial, Helvetica, SansSerif;
+}
+
+
+.myfonts{
+	font-size:8pt;
+
+font-family:Tahoma, Arial, Helvetica, SansSerif;
+	
+}
+
+td.cpYearNavigation{
+border-style:none;text-align: center ;
+}
+td.cpMonthNavigation{
+border-style:none;text-align: center ;
+}
+
+a.cpCurrentMonthDate{
+color:#000000;
+}
+a.cpCurrentMonthDateH{
+color:#FF0000;
+font-weight: bold ;
+}
+
+
+a.cpOtherMonthDate{
+color:#FFFFFF;
+}
+
+a.cpCurrentDate{
+color:black ;
+font-weight:bold;
+
+}
+a.cpCurrentDateH{
+color:red;
+font-weight:bold;
+}
+
+
+
+.navi{
+
+	background-color:#E6E6E6;
+direction:rtl ;
+}
+
+td.cpDayCH{
+background-color:#F1F6FC;
+cursor:pointer ;
+border: 1px solid #F1F6FC;
+height:22px;
+border-top: 2px white solid ;
+font-weight:bold;text-align: center ;
+}
+
+td.cpCurrentMonthDate{
+background-color:#FFFFFF ;
+cursor:pointer ;
+border: 1px solid #F1F6FC;
+height:22px;text-align: center ;white-space:nowrap;
+}
+td.cpCurrentMonthDate2{
+background-color:silver;
+cursor:pointer ;
+border: 1px solid #F1F6FC;
+height:22px;text-align: center ;
+}
+td.cpCurrentMonthDateH{
+background-color:#FFFFFF ;
+cursor:pointer ;
+border: 1px solid #F1F6FC;
+height:22px;text-align: center ;
+}
+td.cpCurrentMonthDateH2{
+background-color:silver;
+cursor:pointer ;
+border: 1px solid #F1F6FC;
+height:22px;text-align: center ;
+}
+
+
+td.cpOtherMonthDate{
+background-color:white ;
+border: 1px solid #F1F6FC;
+height:22px;text-align: center ;
+}
+
+td.cpOtherMonthDate2{
+background-color:white ;
+border: 1px solid #F1F6FC;
+height:22px;text-align: center ;
+}
+
+
+td.cpCurrentDate{
+background-color:#FFFF66;	
+cursor:pointer ;
+border: 1px solid #F1F6FC;
+height:22px;text-align: center ;
+}
+td.cpCurrentDate2{
+background-color:silver ;	
+cursor:pointer ;
+border: 1px solid #F1F6FC;
+height:22px;text-align: center ;
+}
+
+td.cpCurrentDateH{
+background-color:#FFFF66;	
+cursor:pointer ;
+border: 1px solid #F1F6FC;
+height:22px;text-align: center ;
+}
+td.cpCurrentDateH2{
+background-color:silver ;	
+cursor:pointer ;
+border: 1px solid #F1F6FC;
+height:22px;text-align: center ;
+}
+
+
+
+.syscalender{
+position: relative ;width:5px;height:5px;background-color:#D6E4F5;float:right;	font-size:1pt;
+
+}
+.usercalender{
+	position: relative ;width:5px;height:5px;background-color: #FFCBB9;float:right ;top:7px;font-size:1pt;
+}
+.usercalender2{
+	position: relative ;width:5px;height:5px;background-color: #FFCBB9;float:right ;top:7px;left:5px;font-size:1pt;
+}
+
+.popper{display:none;  font-family: Tahoma;font-size:8pt;position : absolute; visibility : hidden; border: 1px #cccc99 solid;background-color:#ffffe0; direction:rtl ; width: 180px; height:inherit ;padding :4px   }
+
+.caldes1{
+	background-color:#F2F7FF;
+	text-align:right;
+	line-height:20px;
+	direction:rtl;
+	text-align:right;
+	font-size:8pt;
+	font-family:tahoma;
+	display:none;
+	
+}
+
+.caldes2{
+	background-color:#FFF0F0;
+	text-align:right;
+	line-height:20px;
+	direction:rtl;
+	text-align:right;
+	font-size:8pt;
+	font-family:tahoma;
+	display:none;	
+}

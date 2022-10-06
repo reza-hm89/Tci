@@ -1,0 +1,129 @@
+
+@font-face {
+    font-family: 'BYekan';
+    src: url('../fonts/yekan.eot?#') format('eot'), /* IE6–8 */
+    url('../fonts/Yekan.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/Yekan.ttf') format('truetype'); /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@media print {
+    .page-break {
+        height: 0;
+        page-break-before: always;
+        margin: 0;
+        border-top: none;
+    }
+}
+h4 {
+    margin-top: 0;
+}
+body, p, span, td, a {
+    font-size: 9pt;
+    
+}
+.page {
+    height: 947px;
+    padding-top: 5px;
+    page-break-after: always;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    border-bottom: 1px solid #000;
+}
+
+/*    */
+
+body {
+    font-family: 'BYekan';
+    direction: rtl;
+     margin-left: 2em;
+    margin-right: 2em;
+}
+
+.wrap {
+    height: auto;
+    border: 3px solid #000;
+    padding: 10px;
+}
+
+.row_logo {
+}
+
+.logo {
+    float: right;
+    width: 20%;
+}
+
+    .logo img {
+        width: 150px;
+        height: 150px;
+    }
+
+.hadis {
+    width: 60%;
+    float: right;
+}
+
+.claer {
+    clear: both;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 16px;
+}
+
+.codes {
+    width: 20%;
+    float: right;
+}
+
+.content {
+    width: 95%;
+    padding: 1px;
+    margin: auto;
+    border: 7px solid #000;
+}
+
+.inner-content {
+    border: 1px solid #000;
+}
+
+.amoodi1 {
+    /*-webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270eg);*/
+    position: relative;
+}
+
+.mosh {
+    height: 100px;
+    border-left: 2px solid #000;
+}
+
+.mosh1 {
+    height: 200px;
+    border-left: 2px solid #000;
+}
+
+.right-tbl {
+    float: right;
+    padding-right: 10px;
+}
+
+.left-tbl {
+    float: right;
+   padding-right: 10px;
+    /*margin-right: 250px;*/
+}
+
+.border-top {
+    border-top: 2px solid #000;
+}
+
+.tbl {
+    width: 100%;
+}
+
+.left-text-message {
+    float: left;
+}
