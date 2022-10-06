@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="fa" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="fa" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="fa" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="fa" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Contact Us</title>
+
+    <!-- Meta Description -->
+    <meta name="description" content="Bojnourd ADSL">
+    <meta name="keywords" content="ADSL, Bojnourd, Internet, اینترنت پر سرعت,اینترنت مخابرات">
+    <meta name="author" content="Hossein Bajan">
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fontawesome Icon font -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <!-- fancybox -->
+    <link rel="stylesheet" href="node_modules/fancybox/dist/css/jquery.fancybox.css">
+    <!-- bootstrap.min -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-rtl.min.css">
+    <!-- owl.carousel -->
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.css">
+    <!-- bootstrap.min -->
+    <link rel="stylesheet" href="node_modules/animate.css/animate.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="node_modules/hbsoft_fonts/fonts.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="node_modules/main.css">
+
+    <script type="text/javascript"
+            src="http://maps.google.com/maps/api/js?sensor=false">
+    </script>
+
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsfooeYG0U5lOLxZYFXQcUwdk0AePEhL4&callback=initMap">
+    </script>
+
+    <script type="text/javascript">
+        function initialize() {
+            var position = new google.maps.LatLng(37.4753091, 57.341435);
+            var myOptions = {
+                zoom: 10,
+                center: position,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(
+                    document.getElementById("map_canvas"),
+                    myOptions);
+
+            var marker = new google.maps.Marker({
+                position: position,
+                map: map,
+                title: "This is the place."
+            });
+
+            var contentString = 'Hello <strong>World</strong>!';
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            google.maps.event.addListener(marker, 'click', function () {
+                infowindow.open(map, marker);
+            });
+
+            ////////////////   namayesh dar vasate safhe bar asase marker    /////////
+            map.addListener('center_changed', function () {
+                // 3 seconds after the center of the map has changed, pan back to the
+                // marker.
+                window.setTimeout(function () {
+                    map.panTo(marker.getPosition());
+                }, 3000);
+            });
+
+            marker.addListener('click', function () {
+                map.setZoom(8);
+                map.setCenter(marker.getPosition());
+            });
+
+        }
+
+    </script>
+
+</head>
+<body onload="initialize()">
+
+<!--
+       Fixed Navigation
+       ==================================== -->
+<div class="top-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 contact-us">
+                <h4>
+                    <span class="contact-us-btn">
+                        <i class="contact-us-text">ارتباط با ما</i>
+                    </span>
+                </h4>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 login-to-panel">
+                <p>
+                    <span>
+                        شماره سراسری ۲۰۲۰
+                    </span>
+                    <span>
+                    <i class="fa fa-phone font-size-fa-number"></i>
+                    </span>
+
+                </p>
+                <button class="btn btn-primary">
+                    <span>
+                        <i class="fa fa-lock"></i>
+                    </span>
+                    <span>ورود به پنل کاربری</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<header id="navigation" class="navbar-inverse animated-header">
+    <div class="container">
+        <div class="navbar-header">
+            <!-- responsive nav button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- /responsive nav button -->
+        </div>
+
+        <!-- main nav -->
+        <nav class="collapse navbar-collapse navbar-right" role="navigation">
+            <ul id="nav" class="nav navbar-nav main-menu">
+                <li><a href="index.html">
+                    <span><i class="fa fa-home font-size-fa"></i></span>
+                    <span>صفحه نخست</span>
+                </a></li>
+                <li><a href="services.html">خدمات و سرویس ها</a></li>
+                <li><a href="technical-support.html">پشتیبانی فنی</a></li>
+                <li><a href="namayandegan.html">نمایندگان فروش</a></li>
+                <li><a href="news.html">آرشیو اخبار</a></li>
+                <li class="active"><a href="contact-us.html">ارتباط با ما</a></li>
+            </ul>
+        </nav>
+        <!-- /main nav -->
+
+    </div>
+    <div class="bottom-border-header">
+
+    </div>
+</header>
+<!--
+End Fixed Navigation
+==================================== -->
+
+<div class="container-fluid google-map">
+    <div class="row">
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+            <div id="map_canvas" style="width:100%; height:500px"></div>
+        </div>
+    </div>
+</div>
+<!-- Googgle Map -->
+
+
+<div id="exTab1" class="container">
+
+    <h3 class="news-box-title">
+        <span>ارتباط با ما</span>
+    </h3>
+    <div class="devider"><i class="fa fa-phone-square fa-2x"></i></div>
+
+
+    <ul class="nav nav-pills">
+        <li class="active">
+            <a href="#moshtarian" data-toggle="tab">واحد فروش و امور مشتریان</a>
+        </li>
+        <li><a href="#fanni" data-toggle="tab">واحد پشتیبانی فنی</a>
+        </li>
+        <li><a href="#ravabet-omumi" data-toggle="tab">واحد روابط عمومی</a>
+        </li>
+        <li><a href="#sedaye-moshtari" data-toggle="tab">واحد صدای مشتری</a>
+        </li>
+    </ul>
+
+    <div class="tab-content clearfix">
+        <div class="tab-pane active" id="moshtarian">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <h2 class="text-center"><i class="fa fa-map-marker fa-2x"></i></h2>
+                    <h4 class="text-center">آدرس</h4>
+                    <p class="text-center">خراسان شمالی بجنورد چهارراه مخابرات</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <h2 class="text-center"><i class="fa fa-phone fa-2x"></i></h2>
+                    <h4 class="text-center">شماره تماس</h4>
+                    <p class="text-center">تلفن: ۱۵۱۵ داخلی ۱</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <h2 class="text-center"><i class="fa fa-envelope fa-2x"></i></h2>
+                    <h4 class="text-center">آدرس ایمیل</h4>
+                    <p class="text-center">info [at] adsl [dot] ir</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <h2 class="text-center"><i class="fa fa-user-circle fa-2x"></i></h2>
+                    <h4 class="text-center">گفتگوی آنلاین</h4>
+                    <p class="text-center">گفتگوی آنلاین با تیم پشتیبانی</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="tab-pane" id="fanni">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <h2 class="text-center"><i class="fa fa-address-book fa-2x"></i></h2>
+                    <h4 class="text-center">آدرس</h4>
+                    <p class="text-center">خراسان شمالی بجنورد خیابان شریعتی شمالی چهارراه مخابرات</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <h2 class="text-center"><i class="fa fa-address-book fa-2x"></i></h2>
+                    <h4 class="text-center">آدرس</h4>
+                    <p class="text-center">خراسان شمالی بجنورد خیابان شریعتی شمالی چهارراه مخابرات</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <h2 class="text-center"><i class="fa fa-address-book fa-2x"></i></h2>
+                    <h4 class="text-center">آدرس</h4>
+                    <p class="text-center">خراسان شمالی بجنورد خیابان شریعتی شمالی چهارراه مخابرات</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <h2 class="text-center"><i class="fa fa-address-book fa-2x"></i></h2>
+                    <h4 class="text-center">آدرس</h4>
+                    <p class="text-center">خراسان شمالی بجنورد خیابان شریعتی شمالی چهارراه مخابرات</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="tab-pane" id="ravabet-omumi">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <h2 class="text-center"><i class="fa fa-address-book fa-2x"></i></h2>
+                    <h4 class="text-center">آدرس</h4>
+                    <p class="text-center">خراسان شمالی بجنورد خیابان شریعتی شمالی چهارراه مخابرات</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <h2 class="text-center"><i class="fa fa-address-book fa-2x"></i></h2>
+                    <h4 class="text-center">آدرس</h4>
+                    <p class="text-center">خراسان شمالی بجنورد خیابان شریعتی شمالی چهارراه مخابرات</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <h2 class="text-center"><i class="fa fa-address-book fa-2x"></i></h2>
+                    <h4 class="text-center">آدرس</h4>
+                    <p class="text-center">خراسان شمالی بجنورد خیابان شریعتی شمالی چهارراه مخابرات</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <h2 class="text-center"><i class="fa fa-address-book fa-2x"></i></h2>
+                    <h4 class="text-center">آدرس</h4>
+                    <p class="text-center">خراسان شمالی بجنورد خیابان شریعتی شمالی چهارراه مخابرات</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="tab-pane" id="sedaye-moshtari">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <h2 class="text-center"><i class="fa fa-address-book fa-2x"></i></h2>
+                    <h4 class="text-center">آدرس</h4>
+                    <p class="text-center">خراسان شمالی بجنورد خیابان شریعتی شمالی چهارراه مخابرات</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <h2 class="text-center"><i class="fa fa-address-book fa-2x"></i></h2>
+                    <h4 class="text-center">آدرس</h4>
+                    <p class="text-center">خراسان شمالی بجنورد خیابان شریعتی شمالی چهارراه مخابرات</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <h2 class="text-center"><i class="fa fa-address-book fa-2x"></i></h2>
+                    <h4 class="text-center">آدرس</h4>
+                    <p class="text-center">خراسان شمالی بجنورد خیابان شریعتی شمالی چهارراه مخابرات</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <h2 class="text-center"><i class="fa fa-address-book fa-2x"></i></h2>
+                    <h4 class="text-center">آدرس</h4>
+                    <p class="text-center">خراسان شمالی بجنورد خیابان شریعتی شمالی چهارراه مخابرات</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+
+    <h3 class="news-box-title">
+        <span>فرم ارسال پیام</span>
+    </h3>
+    <div class="devider"><i class="fa fa-envelope fa-2x"></i></div>
+
+    <div class="row form-tamas-ba-ma">
+        <div class="col-md-6 col-md-offset-3">
+            <form>
+                <div class="form-group">
+                    <label for="name">نام:</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="family">نام خانوادگی:</label>
+                    <input type="text" class="form-control" id="family">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">پست الکترونیکی:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">موضوع:</label>
+                    <input type="text" class="form-control" id="subject">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="subject">موضوع:</label>
+                    <input type="text" class="form-control" id="subject">
+                </div>
+
+                <div class="form-group">
+                    <label for="comment">متن:</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+
+
+                <button type="submit" class="btn btn-primary col-md-6">ارسال</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+
+
+<!-- Footer
+       ==================================== -->
+
+<footer>
+    <div class="container">
+        <div class="row info-footer-row">
+
+            <div class="footer-content">
+                <div class="wow animated fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                    <p class="reg-to-sub">ثبت نام در خبرنامه</p>
+                    <p class="tarefe">از تعرفه ها و طرح های جدید با خبر شوید</p>
+                </div>
+                <form action="#" method="post" class="subscribe-form wow animated fadeInUp animated"
+                      style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="input-field">
+                        <input type="email" class="subscribe form-control email-sub"
+                               placeholder="ایمیل خود را وارد کنید">
+                        <button type="submit" class="submit-icon">
+                            <i class="fa fa-paper-plane fa-lg"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="footer-social">
+                    <ul>
+                        <li class="wow animated zoomIn animated" style="visibility: visible; animation-name: zoomIn;"><a
+                                href="#"><i class="fa fa-facebook fa-3x"></i></a></li>
+                        <li class="wow animated zoomIn animated" data-wow-delay="0.3s"
+                            style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;"><a href="#"><i
+                                class="fa fa-twitter fa-3x"></i></a></li>
+                        <li class="wow animated zoomIn animated" data-wow-delay="0.6s"
+                            style="visibility: visible; animation-delay: 0.6s; animation-name: zoomIn;"><a href="#"><i
+                                class="fa fa-send fa-3x"></i></a></li>
+                        <li class="wow animated zoomIn animated" data-wow-delay="0.9s"
+                            style="visibility: visible; animation-delay: 0.9s; animation-name: zoomIn;"><a href="#"><i
+                                class="fa fa-instagram fa-3x"></i></a></li>
+                        <li class="wow animated zoomIn animated" data-wow-delay="1.2s"
+                            style="visibility: visible; animation-delay: 1.2s; animation-name: zoomIn;"><a href="#"><i
+                                class="fa fa-youtube fa-3x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>تمامی حقوق برای وب سایت اینترنت مخابرات خراسان شمالی محفوظ می باشد - طراحی و برنامه نویسی <a href="#">حسین
+            باژن</a></p>
+    </div>
+</footer>
+
+<!--End Footer
+==================================== -->
+
+
+<!-- Essential jQuery Plugins
+		================================================== -->
+<!-- Main jQuery -->
+<!--<script src="node_modules/jquery/dist/jquery.js"></script>-->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<!-- Twitter Bootstrap -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Single Page Nav -->
+<script src="node_modules/page-scroll-to-id/jquery.malihu.PageScroll2id.js"></script>
+<!-- jquery.fancybox.pack -->
+<script src="node_modules/fancybox/dist/js/jquery.fancybox.pack.js"></script>
+<!-- Owl Carousel -->
+<script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<!--<scrip src="js/owl.carousel.js"></scrip>-->
+<!-- jquery easing -->
+<script src="node_modules/jquery.easing/jquery.easing.min.js"></script>
+<!-- onscroll animation -->
+<script src="node_modules/wow.js/dist/wow.min.js"></script>
+<!-- Custom Functions -->
+<script src="node_modules/main.js"></script>
+</body>
+
+
+</html>

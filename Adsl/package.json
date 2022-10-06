@@ -1,0 +1,23 @@
+{
+  "name": "adsl",
+  "version": "1.0.0",
+  "description": "internet service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "adsl",
+    "internet"
+  ],
+  "author": "hossein bajan",
+  "license": "ISC",
+  "devDependencies": {
+    "fancybox": "^3.0.0",
+    "font-awesome": "^4.7.0"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "owl.carousel": "^2.2.0"
+  }
+}
